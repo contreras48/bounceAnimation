@@ -1,0 +1,64 @@
+:root {
+  background: #000;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  animation: bounceAnimation 1s infinite;
+}
+
+@keyframes bounceAnimation {
+  0%, 100%{
+    transform: translateY(-200px);
+    animation-timing-function: ease-in;
+  }
+  47% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: translateY(0px) scale(1.2,0.7);
+  }
+}
+
+.shadow {
+  height: 4px;
+  width: 50px;
+  background: rgb(70, 58, 58);
+  border-radius: 50%;
+  animation: shadowAnimation 1s infinite;
+}
+
+@keyframes shadowAnimation {
+  0%, 100%{
+    transform: scaleX(0.6);
+    animation-timing-function: ease-in;
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2,0.7);
+    opacity: 1;
+  }
+}
+
+.msg {
+  color: #fff;
+}
