@@ -1,7 +1,7 @@
 const jugadores = document.querySelectorAll('.among-us > .ball');
 console.log(jugadores.length);
 
-jugadores.forEach(jugador => {
+/* jugadores.forEach(jugador => {
   jugador.addEventListener('click', 
     function(e){
       const antecesor = e.target.closest('.among-us');
@@ -15,4 +15,4 @@ jugadores.forEach(jugador => {
 
       rol.classList.add('visible');
     })
-})
+}) */
